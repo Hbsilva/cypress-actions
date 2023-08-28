@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
     inputs:
       spec:
-        description: Run by cypress comand line
+        description: Run by cypress command line
         default: cypress/e2e/*
 
 jobs:
@@ -41,7 +41,7 @@ jobs:
         - name: Cypress run
           uses: cypress-io/github-action@v5.8.2  
           with:
-            install-comand: npm install
+            install-command: npm install
             browser: chrome
             record: true
             group: UI Chrome
@@ -62,7 +62,7 @@ jobs:
         - name: Cypress run
           uses: cypress-io/github-action@v5.8.2  
           with:
-            install-comand: npm install
+            install-command: npm install
             browser: firefox
             record: true
             group: UI Firefox
